@@ -1,8 +1,3 @@
-/**
- * Created by yuanguozheng on 16/1/19.
- */
-// 'use strict';
-
 import React, { Component } from 'react';
 import {
     Image,

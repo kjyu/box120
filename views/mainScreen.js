@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 
 import Header from '../components/header';
-// import HomePage from './home/HomePage';
+import HomePage from '../views/home';
 import TabNavigator from 'react-native-tab-navigator';
 
 const HOME = 'home';
@@ -59,7 +59,7 @@ export default class MainScreen extends Component {
             <View style={{flex: 1}}>
                 <Header />
                 <TabNavigator hidesTabTouch={true} tabBarStyle={styles.tab}>
-                    {this._renderTabItem(HOME_NORMAL, HOME_FOCUS, HOME, MainScreen._createChildView(HOME))}
+                    {this._renderTabItem(HOME_NORMAL, HOME_FOCUS, HOME, <HomePage nav={this.props.nav}/>)}
                     {this._renderTabItem(CATEGORY_NORMAL, CATEGORY_FOCUS, CATEGORY, MainScreen._createChildView(CATEGORY))}
                     {this._renderTabItem(FAXIAN_NORMAL, FAXIAN_FOCUS, FAXIAN, MainScreen._createChildView(FAXIAN))}
                     {this._renderTabItem(CART_NORMAL, CART_FOCUS, CART, MainScreen._createChildView(CART))}

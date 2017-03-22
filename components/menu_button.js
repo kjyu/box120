@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component , PropTypes} from 'react';
 import {
-    View,
-    Text,
+    StyleSheet,
     Image,
-    TouchableWithoutFeedback,
-    PropTypes,
-    StyleSheet
+    Text,
+    View,
+    TouchableWithoutFeedback
 } from 'react-native';
 
 export default class MenuButton extends React.Component {
